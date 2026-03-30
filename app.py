@@ -54,7 +54,7 @@ if upload is not None:
     
 # 7. Find Duplicate Values in the dataset
 if upload is not None:
-    test==data.duplicated().any()
+    test=data.duplicated().any()
     if test==True:
         st.warning("Do You Want to Remove Duplicate Values")
         dup=st.selectbox("Do You Want To Remove Duplicates",("Select One","Yes","No"))
